@@ -9,7 +9,14 @@ Do the following:
 
 */
 
+const Votingage = 19
 
+if (Votingage > 18) {
+   console.log("You can vote");
+}
+else {
+   console.log("You cannnot vote");
+}
 
 /*
 Task 2 - Values
@@ -20,42 +27,76 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
+const Driver = 18
 
+if (Driver >= 18) {
+   console.log("You are allowed to drive")
+}
+else {
+   console.log("You are youn 'grow'")
+}
 
 
 /*
 Task 3 - Convert Strings to Numbers
-
+ 
 Do the following:   
    1. Declare a string type variable with the value of "1999"
    2. Convert the string value of "1999" to a integer value of 1999
    3. Return the result
-
+ 
    HINT: look up the Number method
 */
 
 
+var num1 = 1999;
+var num2 = '1999';
+if (num1 === num2) {
+   console.log(true);
+} else {
+   console.log(false);
+}
+// The result is false
+
 /*
 Task 4 - Mood Checker
-
+ 
 Do the following:   
    1. Write a script that prompts the user for their current mood. 
    2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up',
    3. Else just print 'So moody!'
-
+ 
 */
+let mood = prompt("Tell me your mood?")
+
+if (mood === 'happy') {
+   console.log('Yay me too!');
+} else if (mood === 'sad') {
+   console.log('Aw cheer up');
+} else {
+   console.log('so moody');
+}
 
 
 /*
-
-
+ 
+ 
 Task 5 - Odd or Even
-
+ 
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
-
+ 
 */
 
-var num = ; // write a number here
+
+var num = 38;
+if (num % 2 == 0) {
+   console.log("even");
+}
+else {
+   console.log("odd");
+}
+
+// write a number here
 
 // write your conditions here
 
@@ -103,6 +144,24 @@ It's okay for it to be slow.
 */
 
 
+
+for (var i = 1; i <= 100; i++) {
+   if (i % 15 == 0) {
+      console.log("FizzBuzz");
+   }
+   else if (i % 5 == 0) {
+      console.log("Buzz");
+   }
+   else if (i % 3 == 0) {
+      console.log("Fizz")
+   }
+   else {
+      console.log(i);
+   }
+}
+
+
+
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
@@ -110,12 +169,13 @@ It's okay for it to be slow.
 Using the vowelCounter function below do the following:
   1. Receive a string as a parameter
   2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
+ 
   HINT - you may need to study next week's content on arrays 
   HINT - try looking up the .includes() method
 */
 
 
 function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
+
+   /*add your code here*/
+};
